@@ -1,0 +1,184 @@
+#cont{
+    height: auto;
+    margin: auto;
+    width: 100%;
+  
+    background-color: #fff;
+    position: relative;
+}
+#cont>div>img{
+  max-width: 100%;
+}
+#text{
+    position: absolute;
+    margin-top: 170px;
+    margin-left: 80px;
+  
+    color: black;
+    position:absolute
+
+}
+#text>h3{
+    color: white;
+    font-size: 40px;
+}
+#para{
+    color:blue;
+}
+#sort{
+    color: white;
+    margin-top: 0px;
+}
+.one{
+    height:600px;
+    width: 100%;
+    margin: auto;
+    padding-top: 10px;
+    background-color: #e3ebee;;
+}
+#on{
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    margin-top: 60px;
+    width: 90%;
+    
+
+}
+#on>p{
+    margin-top: 30px;
+    font-size: 20px;
+    margin-right: -50px;
+}
+#on>p>a{
+    text-decoration: none;
+}
+#on>div>h1{
+margin-left:80px ;
+}
+#free{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:10px;
+    justify-content: space-evenly;
+    height: auto;
+    width: 88%;
+ 
+    margin: auto;
+}
+#free>div>a>img{
+    width: 100%;
+}
+#free>div>h4,p{
+    margin-top: 0px;
+    margin-left: 20px;
+}
+#free>div{
+    background-color: white;
+ 
+}
+#free>div>h4{
+    line-height: 1.2em;
+    font-weight: 400;
+}
+.black{
+    color:black;
+    text-decoration: none;
+}
+.med{
+    color:black;
+    text-decoration: none;
+}
+.down{
+    color:blue;
+    text-decoration: none;
+}
+.logo{
+    height: 20px;
+    width: 40px;
+    border: 1px solid blue;
+    background: linear-gradient(to bottom right,#3a8d10 0%,#bfeb00 100%);
+    background-image: linear-gradient(to right bottom, rgb(58, 141, 16) 0%, rgb(191, 235, 0) 100%);
+    border: 1px solid #fff;;
+    border-radius: 10px;
+    margin: 0 0.25rem;
+    text-align: center;
+    margin-left: 120px;
+    margin-bottom: 15px;
+}
+
+.two{
+    height: auto;
+    width: 100%;
+    margin: auto;
+  margin-top: -75px;
+    background-color: #e3ebee;;
+}
+#food{
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    margin-top: 60px;
+    width: 90%;
+    
+
+}
+#food>p{
+    margin-top: 30px;
+    font-size: 20px;
+}
+#food>p>a{
+    text-decoration: none;
+}
+#food>div>h1{
+margin-left:80px ;
+}
+.two{
+    height:600px;
+    width: 100%;
+    margin: auto;
+    padding-top: 10px;
+    border: 1px solid red;
+    background-color: #f0f4f6;
+}
+
+#to{
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    margin-top: 60px;
+    width: 90%;
+
+
+}
+#to>p{
+    margin-top: 30px;
+    font-size: 20px;
+    margin-right: -50px;
+}
+#to>p>a{
+    text-decoration: none;
+}
+#to>div>h1{
+margin-left:80px ;
+}
+#love{
+    display: flex;
+    justify-content: space-between;
+    height: 200px;
+   border: 1px solid red;
+    width: 200px;
+}
+#love>div:nth-child(1){
+    width: 100px;
+    border: 1px solid red;
+
+}
+#love>div:nth-child(2){
+border:1px solid blue;
+width: 100px;
+
+}
+#love>div:nth-child(2)>#bb{
+    width:400px;
+}
