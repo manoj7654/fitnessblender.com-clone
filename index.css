@@ -7,7 +7,7 @@
     margin-bottom: 15px;
     justify-content: space-evenly;
     background-color: #fff;
-    position: fixed;
+  
     
 }
 
@@ -29,8 +29,12 @@ a{
 .main>#log{
     display: flex;
 }
-p{
+.main>p{
     margin-top: 40px;
+}
+.main>a>p{
+    margin-top: 40px;
+    color: blue
 }
 #sign{
     height: 100%;
@@ -41,9 +45,11 @@ p{
    
   
 }
-.main>button{
+.main>a>i{
     border: 0px ;
     background-color: white;
+    font-size: 30px;
+    margin-bottom: 80px;
 }
 .main>img:hover{
     cursor: pointer;
@@ -66,6 +72,7 @@ p{
     width: 40%;
   
 }
+
 .first>div>button{
     height: 50px;
     width: 150px;
@@ -74,6 +81,11 @@ p{
     color: white;
     font-size: 20px;
     align-items: flex-start;
+}
+#para{
+    text-align: left;
+   
+    margin-left: 4px;
 }
 #para,#head{
     color: white;
@@ -192,32 +204,160 @@ p{
 .five>div>h3,p{
     margin-left: 5%;
 }
-.five>a>div{
-    border: 1px solid red;
-}
 .five>div:hover{
     cursor: pointer;
-    border: 2px solid blue;
+    border: 1px solid blue;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
 }
+.five>a:hover{
+    text-decoration: underline;
+}
+
 .six{
     display: flex;
-    height: 500px;
-    width: 98%;
+    height: 400px;
+    width: 100%;
     margin: auto;
-    border: 1px solid red;
-    background-color: black;
+    
+    background-color: #212432;
 }
 .six>div:nth-child(1){
     height: 300px;
-    width: 40%;
-    border: 1px solid red;
+    width: 30%;
+   
+
 }
 .six>div:nth-child(2){
     height: 700px;
-    width: 60%;
-    border: 1px solid red
+    width: 70%;
+    margin-top: 60px;
+   
+   
 }
+
 .six>div>img{
     width: 100%;
+}
+.six>div>a>img{
+    width: 20%;
+    margin:60px 40px;
+}
+#six>div:nth-child(2){
+    display: flex;
+   
+}
+#first>ul>li{
+list-style-type: none;
+font-size:15px;
+color: white;
+height: 40px;
+
+
+}
+
+.color{
+    color: white;
+}
+#first>ul>li>a{
+    color:grey
+}
+
+
+#two>ul>li{
+    list-style-type: none;
+    font-size:15px;
+    color: white;
+    height: 40px;
+    
+    
+    }
+#two>ul>li>a{
+    color:grey
+}
+#three>ul>li{
+    list-style-type: none;
+    font-size:15px;
+    color: white;
+    height: 40px;
+    
+    
+    }
+#four>ul>li>a{
+    color:white
+}
+#four>ul>li{
+    list-style-type: none;
+    font-size:15px;
+    color: white;
+    height: 40px;
+    
+    
+    }
+#three>ul>li>a{
+    color:grey
+}
+#buttom{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    height: 100%;
+ 
+    
+}
+#buttom>div>a>h2{
+    color: white;
+    font-size: 15px;
+ 
+}
+#button>div{
+    height: 100%;
+}
+#button>div>a>h2,p{
+    margin-top: 5px;
+    font-size:15px;
+    color: grey;
+}
+#button>div>a>h2{
+    color: white;
+   
+}
+#bot{
+    display: flex;
+    margin-top: -100px;
+    height: 100px;
+    width: 100%;
+    margin: auto;
+
+    background-color:#212432 ;
+    box-shadow: rgb(251, 253, 255) 0px 1px 2px 0px, rgba(246, 247, 248, 0.15) 0px 2px 6px 2px;
+    
+}
+#bot>p{
+    margin-top: 0px;
+   
+}
+#bot>div:nth-child(1){
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+#bot>div:nth-child(2){
+
+    width: 50%;
+    color: white;
+       margin-left: 30px;
+    text-align: right;
+    padding-right: 60px;
+}
+#bot>div:nth-child(2)>a>i{
+  
+    color: white;
+    margin-top: 40px;
+ margin-right: 10px;
+}
+#bot>div:nth-child(1)>a{
+    color:white;
+    margin-left: 20px;
+    margin-top: -10px;
 }
