@@ -7,8 +7,9 @@
     margin-bottom: 15px;
     justify-content: space-evenly;
     background-color: #fff;
-  
-    
+    position: sticky;
+    top:0;
+    z-index: 20;
 }
 
 .main>img{
@@ -73,7 +74,7 @@ a{
   
 }
 
-.first>div>button{
+.first>div>a>button{
     height: 50px;
     width: 150px;
     border-radius: 5px;
@@ -81,6 +82,10 @@ a{
     color: white;
     font-size: 20px;
     align-items: flex-start;
+}
+.first>div>a>button:hover{
+    cursor: pointer;
+    background-color: rgb(27, 26, 26);
 }
 #para{
     text-align: left;
@@ -102,13 +107,18 @@ a{
     text-align: center;
     background-color: #f9e7f6;
 }
-.second>button{
+.second>a>button{
     height: 50px;
     width: 150px;
     border-radius: 5px;
     background-color: black;
     color:white;
 }
+.second>a>button:hover{
+    cursor: pointer;
+    background-color: rgb(27, 26, 26);
+}
+
 .first>div>img{
     width: 100%;
 }
@@ -117,6 +127,7 @@ a{
     margin-top:130px;
     margin-bottom: 0px;
 }
+
 .third{
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -131,6 +142,10 @@ a{
 }
 .third>div>img{
     width: 100%;
+}
+.third>div>a>p{
+    color:blue;
+    font-size:20px
 }
 .third>div:nth-child(1){
     background-color: #f0f4f6;
@@ -168,6 +183,7 @@ a{
    top:40px;
    margin-left: 450px;
     color: black;
+  
 }
 #five{
     height: auto;
@@ -214,6 +230,9 @@ a{
     text-decoration: underline;
 }
 
+.p{
+    color:blue
+}
 .six{
     display: flex;
     height: 400px;
