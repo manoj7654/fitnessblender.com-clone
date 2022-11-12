@@ -1,3 +1,5 @@
+
+
 #cont{
     height: auto;
     margin: auto;
@@ -34,7 +36,9 @@
     width: 100%;
     margin: auto;
     padding-top: 10px;
-    background-color: #e3ebee;;
+    background-color: #e3ebee;
+ 
+   
 }
 #on{
     display: flex;
@@ -107,12 +111,15 @@ margin-left:80px ;
     margin-bottom: 15px;
 }
 
-.two{
-    height: auto;
+.five{
+    height: 600px;
     width: 100%;
     margin: auto;
-  margin-top: -75px;
+ 
     background-color: #e3ebee;;
+    
+    margin-top: 120px;
+
 }
 #food{
     display: flex;
@@ -138,8 +145,32 @@ margin-left:80px ;
     width: 100%;
     margin: auto;
     padding-top: 10px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
+    background-color: #e3ebee;
+    margin-top: 100px;
+}
+
+.three{
+    height:650px;
+    width: 100%;
+    margin: auto;
+    padding-top: 10px;
+    /* border: 1px solid red; */
+    background-color: #f0f4f6;;
+    margin-bottom: 120px;
+    margin-top: 100px;
+}
+.four{
+    height:650px;
+    width: 100%;
+    margin: auto;
+    padding-top: 10px;
+    /* border: 1px solid red; */
     background-color: #f0f4f6;
+  margin-bottom: 200px;
+  margin-top: 120px;
+      
+   
 }
 
 #to{
@@ -166,12 +197,12 @@ margin-left:80px ;
     display: flex;
     justify-content: space-between;
     height: 200px;
-   border: 1px solid red;
+   /* border: 1px solid red; */
     width: 200px;
 }
 #love>div:nth-child(1){
     width: 100px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 
 }
 #love>div:nth-child(2){
@@ -190,6 +221,7 @@ width: 100px;
     margin: auto;
     /* border: 1px solid red; */
     background-color: #212432;
+    margin-top: 100px;
     }
     .six>div:nth-child(1){
     height: 300px;
@@ -350,4 +382,5 @@ width: 100px;
     color:white;
     margin-left: 20px;
     margin-top: -10px;
+    text-decoration: none
     }
