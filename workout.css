@@ -1,18 +1,179 @@
+*{
+    marker-start: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.menubar{
+    background-color: white;
+    text-align: center;
+    position: sticky;
+    top:0;
+ 
+}
+.menubar ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0px;
+    list-style: none;
+}
+.menubar ul li{
+    width: 130px;
+    margin: 20px;
+    padding: 10px;
+  
+}
+.menubar ul li a{
+    color:black;
+    text-decoration: none;;
+}
+/* .menubar ul li :hover{
+    text-decoration: underline;
+    color:blue;
+    border-radius: 5px;
+} */
+.one{
+    display: none;
+}
+
+.menubar ul li:hover .one{
+display: block;
+position: absolute;
+background-color: #313443;
+border-radius: 5px;
+margin-top: 10px;
+margin-left: 5px;
+color: white;
+}
+
+.one ul li a{
+    color: white;
+}
+.menubar ul img{
+width: 200%;
+margin-left: 40px;
+margin-bottom: 10px;
+}
+.margin{
+margin-left: 100px;
+}
+#box{
+height: 80px;
+width: 150px;
+/* border: 1px solid red; */
+margin-top: 30px;
+
+}
+#box>a{
+text-decoration: none;
+margin-top: 20px;
+}
+#search{
+display: flex;
+justify-content: space-evenly;
+height: 80px;
+gap:20px;
+width: 500px;
+/* border: 1px solid blue; */
+margin-top: 20px;
+margin-right: 40px;
+}
+#search> a{
+margin-top:10px;
+}
+#mouse{
+height: 30px;
+width: 100px;
+margin-top: 11px;
+border-radius: 5px;
+}
+.id{
+margin-top: 10px;
+font-size: 30px;
+}
+#last{
+color: blue;
+}
+#manoj{
+
+height: 350px;
+width: 30%;
+border: 1px solid #4296cb;
+text-align: start;
+margin-right: 500px;
+
+background-color: #333;
+}
+#manoj>p,h3{
+color:white
+}
+#mob{
+
+height: 30px;
+width: 50%;
+   margin-left: 10px;
+border: 1px solid green;
+text-align: center;
+font-size: 20px;
+border-radius: 5px;
+background-color: #4296cb;
+margin-top: 50px;
+}
+#mob>a{
+text-decoration: none;
+color: white;
+margin-top: -20px;
+}
+#phon{
+height: 30px;
+width: 50%;
+margin-left: 10px;
+margin-top: 50px;
+border: 1px solid  #4296cb;
+text-align: center;
+font-size: 20px;
+border-radius: 5px; 
+}
+#phon>a{
+text-decoration: none;
+color:white
+
+}
+#phon:hover{
+background-color: #4296cb;
+}
+#manoj{
+display: none;
+}
+.menubar ul div :hover #manoj{
+display: block;
+position: absolute;
+margin-right: 50px;
+margin-top: 30px;
+padding: 20px;
+
+}
+#pr{
+    margin-left: 40px;
+}
+#co{
+margin-right: 40px;
+}
 
 
 #cont{
     height: auto;
     margin: auto;
     width: 100%;
-  
+  margin-top: 0px;
     background-color: #fff;
-    position: relative;
+    /* position: relative; */
 }
 #cont>div>img{
   max-width: 100%;
 }
 #text{
-    position: absolute;
+    /* position: absolute; */
     margin-top: 170px;
     margin-left: 80px;
   
@@ -31,7 +192,7 @@
     color: white;
     margin-top: 0px;
 }
-.one{
+.ones{
     height:600px;
     width: 100%;
     margin: auto;

@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="login.css">
+   <link rel="stylesheet" href="signin.css">
    <script src="https://kit.fontawesome.com/642aa1c423.js" crossorigin="anonymous"></script>
+        
     <title>Login </title>
 </head>
 <body>
@@ -33,7 +34,7 @@
                 </ul>
             </div>
         </li>
-        <li><a href="">HEALTHY LIVING</a>
+        <li><a href="healthliving.html">HEALTHY LIVING</a>
             <div  class="one">
                 <ul>
                     <li><a href="">EXPERT ARTICLES</a></li>
@@ -93,22 +94,26 @@
         <div id="main">
             <div id="fir" >
                <i id="f" class="fa-brands fa-facebook-f" style="color:white"></i>
-               <h2>FACEBOOK</h2>
+               <a href=""> <h2>FACEBOOK</h2></a>
             </div>
             <div id="sec">
               <a href="">  <i id="g" class="fa-brands fa-google" style="color:white"></i></a>
-                <h2 id="one">GOOGLE</h2>
+               <a href=""> <h2 id="one">GOOGLE</h2></a>
             </div>
         </div>
-        <p>OR</p>
+        <div id="pen">OR</div>
       
         <div id="dom">
-          <div ><input type="text" name="" id="low" placeholder="Username"></div>
-          <div><input type="text" name="" id="high" placeholder="Password"></div>
-         <a id="button" href=""><button>SIGN IN</button></a>
+
+          <form>
+            <input type="text" placeholder="Username"  id="low">
+            <input type="text" name="" id="high" placeholder="Password">
+            <input type="submit" value="Sign In"  id="button" >
+          </form>
+        </div>
         <div id="for"> <a  href="">Forgot Password ?</a></div>
         <p id="para">Not a member yet ? <a href="join.html">Join Now --it's free !</a></p>
-        </div>
+        
        
     </div>
     <div class="six">
@@ -196,4 +201,38 @@
          </div>
       </div>
 </body>
+
 </html>
+
+<script>
+    document.querySelector('form').addEventListener('submit',myfun1)
+let newData= JSON.parse(localStorage.getItem("join")) || []
+console.log(newData)
+
+function myfun1(event){
+    event.preventDefault();
+    
+      
+            
+             let Username=document.querySelector("#low").value;
+             let Password=document.querySelector("#high").value;
+            
+    
+             let obj={Username,Password};
+          let flag=false;
+          for(let i=0;i<newData.length;i++){
+            if(newData[i].Username==obj.Username && newData[i].Password==obj.Password){
+                
+                flag=true;
+                break;
+            }
+          }
+        if(flag==true){
+            alert("Login Successfully");
+            window.location="./HomePage.html";
+        }else{
+            alert("Wrong Email / Password")
+        }
+        
+    }
+</script>

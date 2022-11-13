@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/642aa1c423.js" crossorigin="anonymous"></script>
-    <title>Join</title>
     <link rel="stylesheet" href="join.css">
+    <title>Document</title>
 </head>
 <body>
+   
   <div class="menubar">
        
     <ul>
@@ -33,7 +34,7 @@
                 </ul>
             </div>
         </li>
-        <li><a href="">HEALTHY LIVING</a>
+        <li><a href="healthliving.html">HEALTHY LIVING</a>
             <div  class="one">
                 <ul>
                     <li><a href="">EXPERT ARTICLES</a></li>
@@ -99,16 +100,20 @@
               <a href="">  <i id="g" class="fa-brands fa-google" style="color:white"></i></a>
                 <h2 id="one">GOOGLE</h2>
             </div>
-        </div>
-        <div id="space">OR</div>
-         <div id="cont">
+          </div>
+           <div id="space">OR</div>
+                <div id="cont">
                    <div id="join">
-                        <div ><input type="text" name="" id="low" placeholder="First Name"></div>
-                        <div><input type="text" name="" id="high" placeholder="Last Name"></div>
-                        <div><input type="text" name="" id="high" placeholder="Email Adress"></div>
-                        <div><input type="text" name="" id="high" placeholder="Username"></div>
-                        <div><input type="text" name="" id="high" placeholder="Password"></div>
-                        <div><input type="text" name="" id="high" placeholder="Confirm Password"></div>           
+                       
+                              <form >
+                                <input type="text" id="fn" placeholder="Firs Name" required>
+                                <input type="text" id="l" placeholder="Last Name"required>
+                                <input type="email" id="e" placeholder="Email Adress" required>
+                                <input type="text" id="uname" placeholder="Username" required>
+                                <input type="password" id="ps" placeholder="Password" required>
+                                <input type="password" id="cps" placeholder="Confirm Password" required>
+                                <input type="submit" name="" id="button" value="JOIN">
+                              </form>
                    </div> 
                  <div id="key">
                      <h4>Key Benefites:</h4>
@@ -120,11 +125,9 @@
                      <p>and much. much more...</p>
                  </div>
                 </div>
-        </div>
-        <div id="log">
-            <a href="signin.html"><button>JOIN</button></a>
-        </div>
-          <p>Already a Member ? <a href="signin.html">Sign In</a></p>
+            </div>
+       
+          <p id="log">Already a Member ? <a href="signin.html">Sign In</a></p>
 
 
           <div class="six">
@@ -213,3 +216,32 @@
           </div>
 </body>
 </html>
+<script>
+     
+   document.querySelector('form').addEventListener('submit', myfun)
+let newData= JSON.parse(localStorage.getItem(join))||[];
+function myfun(event){
+    event .preventDefault();
+         let FirstName=document.querySelector("#f").value;
+         let LastName=document.querySelector("#l").value;
+         let EmailAddress=document.querySelector("#e").value;
+         let Username=document.querySelector("#uname").value;
+         let Password=document.querySelector("#ps").value;
+         let ConfirmPassword=document.querySelector("#cps").value;
+
+         let obj={FirstName,LastName,EmailAddress,Username,Password,ConfirmPassword};
+       newData.push(obj);
+    
+       localStorage.setItem("join",JSON.stringify(newData))
+       join(newData)
+}
+
+function join(newData){
+    if(newData==null){
+        alert("Please fill all the data")
+    }else{
+        alert("join Successfull");
+        window.location="./signin.html"
+    }
+}
+</script>
