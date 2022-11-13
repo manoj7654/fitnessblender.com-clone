@@ -6,6 +6,9 @@
 .menubar{
     background-color: white;
     text-align: center;
+    position: sticky;
+    top:0;
+    z-index: 20;
 }
 .menubar ul{
     display: flex;
@@ -85,8 +88,14 @@ margin-top: 11px;
 border-radius: 5px;
 }
 .id{
-margin-top: 10px;
-font-size: 30px;
+margin-top: 0px;
+font-size: 20px;
+/* border: 1px solid red; */
+
+width: 40px;
+}
+.fa{
+    margin-right: 20px;
 }
 #last{
 color: blue;
@@ -156,134 +165,230 @@ padding: 20px;
 #co{
 margin-right: 40px;
 }
-
-
-#sign{
+#table{
     height: auto;
-    width: 50%;
-    margin: auto;
+    width: 100%;
     /* border: 1px solid red; */
+    
+    position: relative;
+
 }
-#sign>h1{
-text-align: center;
+table>h4,h1,p{
+    margin-left: 70px;
+    color: white;
 }
-#face{
+#table>div>img{
+    width: 100%;
+    height: 100%
+}
+#h{
+    margin-left:70px;
+    margin-top: 150px;
+    color: rgb(71, 143, 224);
+}
+#ram{
+    position: absolute
+}
+#non{
+    margin-left: 70px;
+    color: white;
+}
+
+.ones{
+    height:600px;
+    width: 100%;
+    margin: auto;
+    padding-top: 10px;
+    background-color: #e3ebee;
+ 
+   
+}
+#on{
     display: flex;
     justify-content: space-between;
-    height: 50px;
-    width: 100%;
-    margin: auto;
-     
-    /* border: 1px solid blue; */
-}
-
-
-#main{
-    height: 50px;
-    width: 100%;
-    display: flex;
-    /* border: 1px solid red; */
-    justify-content: center;
-    gap:30px
-}
-#fir{
-    height: 50px;
-    width: 50%;
-    display: flex;
+    height: 100px;
+    margin-top: 60px;
+    width: 90%;
     
-    justify-content: space-evenly;
-    background-color: #3f66b6;
-    border-radius: 5px;
+
 }
-#sec{
-    height: 50px;
-    width: 50%;
-    display: flex;
-    background-color: #db4a3c;
-    border-radius: 5px;
+#on>p{
+    margin-top: 30px;
+    font-size: 20px;
+    margin-right: -50px;
+}
+#on>p>a{
+    text-decoration: none;
+}
+#on>div>h1{
+margin-left:80px ;
+color:black
+}
+#to>div>h1{
+    color:black
+}
+#free{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:10px;
+    justify-content: space-evenly;
+    height: auto;
+    width: 88%;
  
-   
-    justify-content: space-evenly;
+    margin: auto;
 }
-
-#sec>h2{
-    margin-top: 12px;
-    color: white;
+#free>div>a>img{
+    width: 100%;
 }
-#fir>#one{
-    margin-bottom: 40px;
-    margin-left: 70px;
+#free>div>h4,p{
+    margin-top: 0px;
+    margin-left: 10px;
 }
-
-#g{
-    margin-top: 15px;
-    font-size: 20px;
+#free>div{
+    background-color: white;
+ 
 }
-#fir>h2{
-    margin-top: 12px;
-    color: white;
+#free>div>h4{
+    line-height: 1.2em;
+    font-weight: 400;
 }
-#f{
-    margin-top: 15px;
-    font-size: 20px;
+.black{
+    color:black;
+    text-decoration: none;
 }
-p{
+.med{
+    color:black;
+    text-decoration: none;
+}
+.down{
+    color:blue;
+    text-decoration: none;
+}
+.logo{
+    height: 20px;
+    width: 40px;
+    border: 1px solid blue;
+    background: linear-gradient(to bottom right,#3a8d10 0%,#bfeb00 100%);
+    background-image: linear-gradient(to right bottom, rgb(58, 141, 16) 0%, rgb(191, 235, 0) 100%);
+    border: 1px solid #fff;;
+    border-radius: 10px;
+    margin: 0 0.25rem;
     text-align: center;
-    margin-bottom: 30px;
-    margin-top: 50px;
+    margin-left: 120px;
+    margin-bottom: 15px;
 }
-#dom{
-    height: 300px;
-    width: 50%;
+
+.five{
+    height: 600px;
+    width: 100%;
     margin: auto;
-}
-#low{
-    width: 100%;
-    height: 30px;
-    margin-bottom: 15px;
-    border-radius: 5px;
-}
-#high{
-    width: 100%;
-    height: 30px;
-    margin-bottom: 15px;
-    border-radius: 5px;
-}
-#dom>a>button{
-    height: 30px;
-    width: 102%;
-    background-color: #4296cb;
-    color:white;
-    border-radius: 5px;
-    border: 0px;
+ 
+    background-color: #e3ebee;;
+    
+    margin-top: 120px;
 
 }
-#dom>a>button:hover{
-    cursor: pointer;
-}
-#for{
+.seven{
+    height: 600px;
+    width: 100%;
+    margin: auto;
  
-    font-size: 20px;
-    margin-left: 60px;
-    margin-top: 20px;
+    background-color:#fff;
     
+    margin-top: 120px;
+
+}
+#food{
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    margin-top: 60px;
+    width: 90%;
+    
+
+}
+#food>p{
+    margin-top: 30px;
+    font-size: 20px;
+}
+#food>p>a{
+    text-decoration: none;
+}
+#food>div>h1{
+margin-left:80px ;
+}
+.two{
+    height:600px;
+    width: 100%;
+    margin: auto;
+    padding-top: 10px;
+    /* border: 1px solid red; */
+    background-color: #e3ebee;
+    margin-top: 100px;
+}
+
+.three{
+    height:650px;
+    width: 100%;
+    margin: auto;
+    padding-top: 10px;
+    /* border: 1px solid red; */
+    background-color: #f0f4f6;;
+    margin-bottom: 120px;
+    margin-top: 100px;
+}
+.four{
+    height:650px;
+    width: 100%;
+    margin: auto;
+    padding-top: 10px;
+    /* border: 1px solid red; */
+    background-color: #f0f4f6;
+  margin-bottom: 200px;
+  margin-top: 120px;
+      
    
 }
-#for>a{
+
+#to{
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    margin-top: 60px;
+    width: 90%;
+
+
+}
+#to>p{
+    margin-top: 30px;
+    font-size: 20px;
+    margin-right: -50px;
+}
+#to>p>a{
     text-decoration: none;
 }
-#for>a:hover{
-    text-decoration: underline;
+#to>div>h1{
+margin-left:80px ;
 }
-#para{
-   margin-top: 70px;
-    margin-right: 20px;
+#love{
+    display: flex;
+    justify-content: space-between;
+    height: 200px;
+   /* border: 1px solid red; */
+    width: 200px;
 }
-#para>a{
-    text-decoration: none;
+#love>div:nth-child(1){
+    width: 100px;
+    /* border: 1px solid red; */
+
 }
-#para>a:hover{
-    text-decoration: underline;
+#love>div:nth-child(2){
+border:1px solid blue;
+width: 100px;
+
+}
+#love>div:nth-child(2)>#bb{
+    width:400px;
 }
 .six{
    
@@ -293,6 +398,7 @@ p{
     margin: auto;
     /* border: 1px solid red; */
     background-color: #212432;
+    margin-top: 100px;
     }
     .six>div:nth-child(1){
     height: 300px;
@@ -452,6 +558,6 @@ p{
     #bot>div:nth-child(1)>a{
     color:white;
     margin-left: 20px;
-    margin-top: -30px;
-    text-decoration: none;
+    margin-top: -10px;
+    text-decoration: none
     }

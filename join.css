@@ -104,6 +104,9 @@ background-color: #333;
 #manoj>p,h3{
 color:white
 }
+#manoj>p{
+   padding-right: 170px;
+}
 #mob{
 
 height: 30px;
@@ -188,6 +191,7 @@ text-align: center;
     justify-content: center;
     gap:30px
 }
+
 #fir{
     height: 50px;
     width: 50%;
@@ -277,11 +281,42 @@ p{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 5px;
 }
-#low{
+#fn{
     width: 98%;
+    height: 30px;
+    margin-bottom: 20px;
 }
+#l{
+    width: 98%;
+    height: 30px;
+    margin-bottom: 20px;
+}
+
+#e{
+    width: 98%;
+    height: 30px;
+    margin-bottom: 20px;
+}
+
+#uname{
+    width: 98%;
+    height: 30px;
+    margin-bottom: 20px;
+}
+#ps{
+    width: 98%;
+    height: 30px;
+    margin-bottom: 20px;
+}
+#cps{
+    width: 98%;
+    height: 30px;
+}
+
+
 #high{
     width: 98%;
+    height: 30px;
 
 }
 #key>p{
@@ -302,7 +337,7 @@ p{
     margin-bottom: 120px;
 
 }  
-#log>a>button{
+#log>button{
     width: 335px;
     height: 35px;
     margin-right: 500px;
@@ -311,14 +346,28 @@ p{
     background-color:  #4296cb;
     border: 0px;
     border-radius: 5px;
+}form>#button{
+    width: 335px;
+    height: 35px;
+    
+    font-size: 20px;
+    color:white;
+    background-color:  #4296cb;
+    border: 0px;
+    border-radius: 5px;
+    margin-top: 110px;
+    margin-left: 150px;
 }
-#log>a>button:hover{
+form>#button:hover{
     cursor: pointer;
 }
 p{
-  
+     margin-top: 100px;
     color:grey;
 } 
+#log{
+    margin-top: 80px;
+}
 #space{
     margin-top: 50px;
     text-align: center;
